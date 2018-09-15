@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		883B8BA821481D520086F106 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 883B8BA721481D520086F106 /* AppDelegate.m */; };
-		883B8BAB21481D520086F106 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883B8BAA21481D520086F106 /* ViewController.m */; };
-		883B8BAE21481D520086F106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883B8BAC21481D520086F106 /* Main.storyboard */; };
 		883B8BB021481D530086F106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883B8BAF21481D530086F106 /* Assets.xcassets */; };
 		883B8BB321481D530086F106 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883B8BB121481D530086F106 /* LaunchScreen.storyboard */; };
 		883B8BB621481D530086F106 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 883B8BB521481D530086F106 /* main.m */; };
 		883B8BC021481D530086F106 /* NJF_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 883B8BBF21481D530086F106 /* NJF_ProjectTests.m */; };
 		883B8BCB21481D530086F106 /* NJF_ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 883B8BCA21481D530086F106 /* NJF_ProjectUITests.m */; };
+		88542C41214961FD002B33ED /* NJF_TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C40214961FD002B33ED /* NJF_TabBarController.m */; };
+		88542C4421496212002B33ED /* NJF_TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C4321496212002B33ED /* NJF_TabBar.m */; };
+		88542C472149623D002B33ED /* NJF_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C462149623D002B33ED /* NJF_NavigationController.m */; };
+		88542C4E214ABEA4002B33ED /* UIView+NJF_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C4D214ABEA4002B33ED /* UIView+NJF_Extension.m */; };
+		88542C54214C1481002B33ED /* NJF_HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C53214C1481002B33ED /* NJF_HomeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +41,6 @@
 		883B8BA321481D520086F106 /* NJF_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NJF_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883B8BA621481D520086F106 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		883B8BA721481D520086F106 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		883B8BA921481D520086F106 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		883B8BAA21481D520086F106 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		883B8BAD21481D520086F106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		883B8BAF21481D530086F106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		883B8BB221481D530086F106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		883B8BB421481D530086F106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +51,17 @@
 		883B8BC621481D530086F106 /* NJF_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NJF_ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		883B8BCA21481D530086F106 /* NJF_ProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_ProjectUITests.m; sourceTree = "<group>"; };
 		883B8BCC21481D530086F106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88542C3F214961FD002B33ED /* NJF_TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_TabBarController.h; sourceTree = "<group>"; };
+		88542C40214961FD002B33ED /* NJF_TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_TabBarController.m; sourceTree = "<group>"; };
+		88542C4221496212002B33ED /* NJF_TabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_TabBar.h; sourceTree = "<group>"; };
+		88542C4321496212002B33ED /* NJF_TabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_TabBar.m; sourceTree = "<group>"; };
+		88542C452149623D002B33ED /* NJF_NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_NavigationController.h; sourceTree = "<group>"; };
+		88542C462149623D002B33ED /* NJF_NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_NavigationController.m; sourceTree = "<group>"; };
+		88542C4C214ABEA4002B33ED /* UIView+NJF_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+NJF_Extension.h"; sourceTree = "<group>"; };
+		88542C4D214ABEA4002B33ED /* UIView+NJF_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+NJF_Extension.m"; sourceTree = "<group>"; };
+		88542C51214C1175002B33ED /* NJF_MacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_MacroDefinition.h; sourceTree = "<group>"; };
+		88542C52214C1481002B33ED /* NJF_HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_HomeController.h; sourceTree = "<group>"; };
+		88542C53214C1481002B33ED /* NJF_HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_HomeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +112,22 @@
 		883B8BA521481D520086F106 /* NJF_Project */ = {
 			isa = PBXGroup;
 			children = (
+				88542C4A214ABDB6002B33ED /* Category */,
 				883B8BA621481D520086F106 /* AppDelegate.h */,
 				883B8BA721481D520086F106 /* AppDelegate.m */,
-				883B8BA921481D520086F106 /* ViewController.h */,
-				883B8BAA21481D520086F106 /* ViewController.m */,
-				883B8BAC21481D520086F106 /* Main.storyboard */,
+				88542C52214C1481002B33ED /* NJF_HomeController.h */,
+				88542C53214C1481002B33ED /* NJF_HomeController.m */,
 				883B8BAF21481D530086F106 /* Assets.xcassets */,
 				883B8BB121481D530086F106 /* LaunchScreen.storyboard */,
 				883B8BB421481D530086F106 /* Info.plist */,
 				883B8BB521481D530086F106 /* main.m */,
+				88542C51214C1175002B33ED /* NJF_MacroDefinition.h */,
+				88542C3F214961FD002B33ED /* NJF_TabBarController.h */,
+				88542C40214961FD002B33ED /* NJF_TabBarController.m */,
+				88542C4221496212002B33ED /* NJF_TabBar.h */,
+				88542C4321496212002B33ED /* NJF_TabBar.m */,
+				88542C452149623D002B33ED /* NJF_NavigationController.h */,
+				88542C462149623D002B33ED /* NJF_NavigationController.m */,
 			);
 			path = NJF_Project;
 			sourceTree = "<group>";
@@ -130,6 +148,15 @@
 				883B8BCC21481D530086F106 /* Info.plist */,
 			);
 			path = NJF_ProjectUITests;
+			sourceTree = "<group>";
+		};
+		88542C4A214ABDB6002B33ED /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				88542C4C214ABEA4002B33ED /* UIView+NJF_Extension.h */,
+				88542C4D214ABEA4002B33ED /* UIView+NJF_Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +221,7 @@
 		883B8B9B21481D520086F106 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NJF_;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "jinfeng niu";
 				TargetAttributes = {
@@ -237,7 +265,6 @@
 			files = (
 				883B8BB321481D530086F106 /* LaunchScreen.storyboard in Resources */,
 				883B8BB021481D530086F106 /* Assets.xcassets in Resources */,
-				883B8BAE21481D520086F106 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883B8BAB21481D520086F106 /* ViewController.m in Sources */,
+				88542C4E214ABEA4002B33ED /* UIView+NJF_Extension.m in Sources */,
 				883B8BB621481D530086F106 /* main.m in Sources */,
+				88542C54214C1481002B33ED /* NJF_HomeController.m in Sources */,
+				88542C41214961FD002B33ED /* NJF_TabBarController.m in Sources */,
 				883B8BA821481D520086F106 /* AppDelegate.m in Sources */,
+				88542C472149623D002B33ED /* NJF_NavigationController.m in Sources */,
+				88542C4421496212002B33ED /* NJF_TabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +331,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		883B8BAC21481D520086F106 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				883B8BAD21481D520086F106 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		883B8BB121481D530086F106 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
