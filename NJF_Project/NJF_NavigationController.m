@@ -27,7 +27,6 @@
     //移除导航栏下面的黑线
     [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
-    
     //设置导航栏的背景色
     [UINavigationBar appearance] .backgroundColor = [UIColor grayColor];
     //设置字体和颜色
@@ -39,17 +38,6 @@
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     if (self.childViewControllers.count > 0) {
-        //自定义返回按钮图片样式
-        UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [backButton setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
-        [backButton setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateHighlighted];
-        [backButton setTitle:@"返回" forState:UIControlStateNormal];
-        backButton.titleLabel.font = [UIFont systemFontOfSize:15];
-        // 让按钮内部的所有内容左对齐
-        backButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-        backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0); // 这里微调返回键的位置可以让它看上去和左边紧贴
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
         viewController.hidesBottomBarWhenPushed = YES;
     }
     //这句super的push要放在后面, 让viewController可以覆盖上面设置的leftBarButtonItem

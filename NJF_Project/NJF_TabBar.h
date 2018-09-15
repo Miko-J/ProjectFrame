@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface NJF_TabBar : UITabBar
-@property (nonatomic, strong) UIButton *centerBtn;
+
 @end

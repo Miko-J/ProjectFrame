@@ -46,7 +46,6 @@
 - (void)setCustomtabbar{
     NJF_TabBar *tabbar = [[NJF_TabBar alloc]init];
     [self setValue:tabbar forKeyPath:@"tabBar"];
-    [tabbar.centerBtn addTarget:self action:@selector(centerBtnClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)addChildVC:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage{
@@ -58,10 +57,6 @@
     [vc.tabBarItem setTitleTextAttributes:dict forState:UIControlStateSelected];
     NJF_NavigationController *nav = [[NJF_NavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
-}
-
-- (void)centerBtnClick:(UIButton *)btn{
-    NSLog(@"点击了中心的按钮");
 }
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
