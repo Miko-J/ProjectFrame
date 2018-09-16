@@ -19,25 +19,23 @@
 
 @implementation NJF_TabBarController
 
-+ (void)initialize{
-    
+
+- (nullable instancetype)initWithItemArr:(NSArray <NSDictionary *> *)itemArr{
+    self = [super init];
+    if (self) {
+        [itemArr enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            UIViewController *vc = [obj objectForKey:@"vc"];
+            NSString *title = [obj objectForKey:@"title"];
+            NSString *normalImgeName = [obj objectForKey:@"normalImgeName"];
+            NSString *selImgeName = [obj objectForKey:@"selImgeName"];
+            [self addChildVC:vc title:title image:normalImgeName selectedImage:selImgeName];
+        }];
+    }
+    return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NJF_HomeController *homeVC = [[NJF_HomeController alloc] init];
-    [self addChildVC:homeVC title:@"首页" image:@"home_normal" selectedImage:@"home_highlight"];
-    
-    UIViewController *vc1 = [[UIViewController alloc] init];
-    [self addChildVC:vc1 title:@"同城" image:@"mycity_normal" selectedImage:@"mycity_highlight"];
-    
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    [self addChildVC:vc2 title:@"消息" image:@"message_normal" selectedImage:@"message_highlight"];
-    
-    UIViewController *vc3 = [[UIViewController alloc] init];
-    [self addChildVC:vc3 title:@"我的" image:@"account_normal" selectedImage:@"account_highlight"];
-    
     // 设置自定义的tabbar
     [self setCustomtabbar];
 }

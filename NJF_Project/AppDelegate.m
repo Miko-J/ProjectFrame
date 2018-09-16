@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "NJF_TabBarController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,13 @@
     
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    self.window.rootViewController = [[NJF_TabBarController alloc] init];
+    NSArray <NSDictionary *> *itemArr = @[@{@"vc":[UIViewController new],@"title":@"首页",@"normalImgeName":@"home_normal",@"selImgeName":@"home_highlight"},
+                                          @{@"vc":[UIViewController new],@"title":@"同城",@"normalImgeName":@"mycity_normal",@"selImgeName":@"mycity_highlight"},
+                                          @{@"vc":[UIViewController new],@"title":@"消息",@"normalImgeName":@"message_normal",@"selImgeName":@"message_highlight"},
+                                          @{@"vc":[UIViewController new],@"title":@"我的",@"normalImgeName":@"account_normal",@"selImgeName":@"account_highlight"},
+                                          ];
+    NJF_TabBarController *tabBarVC = [[NJF_TabBarController alloc] initWithItemArr:itemArr];
+    self.window.rootViewController = tabBarVC;
     [self.window makeKeyAndVisible];
     return YES;
 }

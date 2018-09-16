@@ -10,4 +10,6 @@
 
 @interface NJF_TabBarController : UITabBarController
 
+- (nullable instancetype)initWithItemArr:(NSArray <NSDictionary *> *)itemArr;
+
 @end
