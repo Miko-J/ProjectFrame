@@ -18,6 +18,8 @@
 		88542C472149623D002B33ED /* NJF_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C462149623D002B33ED /* NJF_NavigationController.m */; };
 		88542C4E214ABEA4002B33ED /* UIView+NJF_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C4D214ABEA4002B33ED /* UIView+NJF_Extension.m */; };
 		88542C54214C1481002B33ED /* NJF_HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C53214C1481002B33ED /* NJF_HomeController.m */; };
+		88542C5A214FF5BB002B33ED /* TabBarItemConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88542C59214FF5BB002B33ED /* TabBarItemConfig.plist */; };
+		88542C5D214FFDB8002B33ED /* NJF_PlistConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		88542C51214C1175002B33ED /* NJF_MacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_MacroDefinition.h; sourceTree = "<group>"; };
 		88542C52214C1481002B33ED /* NJF_HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_HomeController.h; sourceTree = "<group>"; };
 		88542C53214C1481002B33ED /* NJF_HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_HomeController.m; sourceTree = "<group>"; };
+		88542C59214FF5BB002B33ED /* TabBarItemConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabBarItemConfig.plist; sourceTree = "<group>"; };
+		88542C5B214FFDB8002B33ED /* NJF_PlistConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_PlistConfig.h; sourceTree = "<group>"; };
+		88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_PlistConfig.m; sourceTree = "<group>"; };
+		88542C5E2150001B002B33ED /* NJF_PlistConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_PlistConfigProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 				88542C53214C1481002B33ED /* NJF_HomeController.m */,
 				883B8BAF21481D530086F106 /* Assets.xcassets */,
 				883B8BB121481D530086F106 /* LaunchScreen.storyboard */,
+				88542C59214FF5BB002B33ED /* TabBarItemConfig.plist */,
 				883B8BB421481D530086F106 /* Info.plist */,
 				883B8BB521481D530086F106 /* main.m */,
 				88542C51214C1175002B33ED /* NJF_MacroDefinition.h */,
@@ -128,6 +135,9 @@
 				88542C4321496212002B33ED /* NJF_TabBar.m */,
 				88542C452149623D002B33ED /* NJF_NavigationController.h */,
 				88542C462149623D002B33ED /* NJF_NavigationController.m */,
+				88542C5B214FFDB8002B33ED /* NJF_PlistConfig.h */,
+				88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */,
+				88542C5E2150001B002B33ED /* NJF_PlistConfigProtocol.h */,
 			);
 			path = NJF_Project;
 			sourceTree = "<group>";
@@ -264,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				883B8BB321481D530086F106 /* LaunchScreen.storyboard in Resources */,
+				88542C5A214FF5BB002B33ED /* TabBarItemConfig.plist in Resources */,
 				883B8BB021481D530086F106 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +303,7 @@
 				88542C4E214ABEA4002B33ED /* UIView+NJF_Extension.m in Sources */,
 				883B8BB621481D530086F106 /* main.m in Sources */,
 				88542C54214C1481002B33ED /* NJF_HomeController.m in Sources */,
+				88542C5D214FFDB8002B33ED /* NJF_PlistConfig.m in Sources */,
 				88542C41214961FD002B33ED /* NJF_TabBarController.m in Sources */,
 				883B8BA821481D520086F106 /* AppDelegate.m in Sources */,
 				88542C472149623D002B33ED /* NJF_NavigationController.m in Sources */,

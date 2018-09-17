@@ -11,11 +11,9 @@
 #import "NJF_NavigationController.h"
 #import "NJF_TabBar.h"
 #import "NJF_MacroDefinition.h"
-#import "NJF_HomeController.h"
+#import "NJF_PlistConfig.h"
 
-@interface NJF_TabBarController ()
-
-@end
+static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
 
 @implementation NJF_TabBarController
 
@@ -23,19 +21,29 @@
 - (nullable instancetype)initWithItemArr:(NSArray <NSDictionary *> *)itemArr{
     self = [super init];
     if (self) {
-        [itemArr enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            UIViewController *vc = [obj objectForKey:@"vc"];
-            NSString *title = [obj objectForKey:@"title"];
-            NSString *normalImgeName = [obj objectForKey:@"normalImgeName"];
-            NSString *selImgeName = [obj objectForKey:@"selImgeName"];
-            [self addChildVC:vc title:title image:normalImgeName selectedImage:selImgeName];
-        }];
+//        [itemArr enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//            UIViewController *vc = [obj objectForKey:@"vc"];
+//            NSString *title = [obj objectForKey:@"title"];
+//            NSString *normalImgeName = [obj objectForKey:@"normalImgeName"];
+//            NSString *selImgeName = [obj objectForKey:@"selImgeName"];
+//            [self addChildVC:vc title:title image:normalImgeName selectedImage:selImgeName];
+//        }];
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //plist文件解析
+    NJF_PlistConfig *config = [[NJF_PlistConfig alloc] initWithName:NJF_ITEM_CONFIG];
+    
+    [config.itemArr enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        UIViewController *vc = [[NSClassFromString([obj objectForKey:@"vc"]) alloc] init]  ;
+        NSString *title = [obj objectForKey:@"title"];
+        NSString *normalImgeName = [obj objectForKey:@"normalImgeName"];
+        NSString *selImgeName = [obj objectForKey:@"selImgeName"];
+        [self addChildVC:vc title:title image:normalImgeName selectedImage:selImgeName];
+    }];
     // 设置自定义的tabbar
     [self setCustomtabbar];
 }
@@ -47,7 +55,7 @@
 }
 
 - (void)addChildVC:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage{
-    vc.navigationItem.title = title;
+    //vc.navigationItem.title = title;
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
