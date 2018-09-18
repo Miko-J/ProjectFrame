@@ -17,7 +17,6 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
 
 @implementation NJF_TabBarController
 
-
 - (nullable instancetype)initWithItemArr:(NSArray <NSDictionary *> *)itemArr{
     self = [super init];
     if (self) {
@@ -36,7 +35,6 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
     [super viewDidLoad];
     //plist文件解析
     NJF_PlistConfig *config = [[NJF_PlistConfig alloc] initWithName:NJF_ITEM_CONFIG];
-    
     [config.itemArr enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIViewController *vc = [[NSClassFromString([obj objectForKey:@"vc"]) alloc] init]  ;
         NSString *title = [obj objectForKey:@"title"];
@@ -96,6 +94,7 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
         }
     }
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
