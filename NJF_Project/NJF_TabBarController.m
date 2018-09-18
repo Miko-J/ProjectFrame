@@ -55,7 +55,7 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
 }
 
 - (void)addChildVC:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage{
-    //vc.navigationItem.title = title;
+    vc.navigationItem.title = title;
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

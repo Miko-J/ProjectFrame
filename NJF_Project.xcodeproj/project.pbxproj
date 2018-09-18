@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88155FFD21508F92000D21C6 /* UIViewController+NJF_VCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 88155FFC21508F92000D21C6 /* UIViewController+NJF_VCCategory.m */; };
 		883B8BA821481D520086F106 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 883B8BA721481D520086F106 /* AppDelegate.m */; };
 		883B8BB021481D530086F106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883B8BAF21481D530086F106 /* Assets.xcassets */; };
 		883B8BB321481D530086F106 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883B8BB121481D530086F106 /* LaunchScreen.storyboard */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88155FFB21508F92000D21C6 /* UIViewController+NJF_VCCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NJF_VCCategory.h"; sourceTree = "<group>"; };
+		88155FFC21508F92000D21C6 /* UIViewController+NJF_VCCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NJF_VCCategory.m"; sourceTree = "<group>"; };
 		883B8BA321481D520086F106 /* NJF_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NJF_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883B8BA621481D520086F106 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		883B8BA721481D520086F106 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 			children = (
 				88542C4C214ABEA4002B33ED /* UIView+NJF_Extension.h */,
 				88542C4D214ABEA4002B33ED /* UIView+NJF_Extension.m */,
+				88155FFB21508F92000D21C6 /* UIViewController+NJF_VCCategory.h */,
+				88155FFC21508F92000D21C6 /* UIViewController+NJF_VCCategory.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				88542C41214961FD002B33ED /* NJF_TabBarController.m in Sources */,
 				883B8BA821481D520086F106 /* AppDelegate.m in Sources */,
 				88542C472149623D002B33ED /* NJF_NavigationController.m in Sources */,
+				88155FFD21508F92000D21C6 /* UIViewController+NJF_VCCategory.m in Sources */,
 				88542C4421496212002B33ED /* NJF_TabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

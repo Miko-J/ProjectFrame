@@ -14,6 +14,10 @@
 @end
 @implementation NJF_PlistConfig
 
+- (void)dealloc{
+    
+}
+
 - (nullable instancetype)initWithName:(NSString *)configName{
     self = [super init];
     if (self) {
