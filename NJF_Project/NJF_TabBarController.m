@@ -70,25 +70,31 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
 {
     NSLog(@"点击的item:%ld title:%@", item.tag, item.title);
-    NSInteger index = [self.tabBar.items indexOfObject:item];
-    [self animationWithIndex:index];
+    [self itemAnimation];
 }
 
-- (void)animationWithIndex:(NSInteger) index {
-    NSMutableArray * tabbarbuttonArray = [NSMutableArray array];
-    for (UIView *tabBarButton in self.tabBar.subviews) {
+- (void)itemAnimation{
+    for (UIControl *tabBarButton in self.tabBar.subviews) {
         if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-            [tabbarbuttonArray addObject:tabBarButton];
+            [tabBarButton addTarget:self action:@selector(tabBarButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         }
     }
-    //需要实现的帧动画,这里根据需求自定义
-    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
-    animation.keyPath = @"transform.scale";
-    animation.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
-    animation.duration = 1;
-    animation.calculationMode = kCAAnimationCubic;
-    [[tabbarbuttonArray[index] layer]
-     addAnimation:animation forKey:nil];
+}
+
+- (void)tabBarButtonClick:(UIControl *)tabBarButton
+{
+    for (UIView *imageView in tabBarButton.subviews) {
+        if ([imageView isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
+            //需要实现的帧动画,这里根据需求自定义
+            CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+            animation.keyPath = @"transform.scale";
+            animation.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
+            animation.duration = 1;
+            animation.calculationMode = kCAAnimationCubic;
+            //把动画添加上去就OK了
+            [imageView.layer addAnimation:animation forKey:nil];
+        }
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
