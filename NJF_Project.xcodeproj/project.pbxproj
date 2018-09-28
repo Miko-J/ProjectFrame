@@ -21,6 +21,10 @@
 		88542C54214C1481002B33ED /* NJF_HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C53214C1481002B33ED /* NJF_HomeController.m */; };
 		88542C5A214FF5BB002B33ED /* TabBarItemConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88542C59214FF5BB002B33ED /* TabBarItemConfig.plist */; };
 		88542C5D214FFDB8002B33ED /* NJF_PlistConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */; };
+		88F5739B215E32CA006EE98E /* NJF_HomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F5739A215E32CA006EE98E /* NJF_HomeTableView.m */; };
+		88F573AD215E3443006EE98E /* NJF_IcityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F573AC215E3443006EE98E /* NJF_IcityViewController.m */; };
+		88F573B0215E345A006EE98E /* NJF_MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F573AF215E345A006EE98E /* NJF_MessageViewController.m */; };
+		88F573B3215E3469006EE98E /* NJF_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F573B2215E3469006EE98E /* NJF_MineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,14 @@
 		88542C59214FF5BB002B33ED /* TabBarItemConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabBarItemConfig.plist; sourceTree = "<group>"; };
 		88542C5B214FFDB8002B33ED /* NJF_PlistConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_PlistConfig.h; sourceTree = "<group>"; };
 		88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_PlistConfig.m; sourceTree = "<group>"; };
+		88F57399215E32CA006EE98E /* NJF_HomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_HomeTableView.h; sourceTree = "<group>"; };
+		88F5739A215E32CA006EE98E /* NJF_HomeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_HomeTableView.m; sourceTree = "<group>"; };
+		88F573AB215E3443006EE98E /* NJF_IcityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_IcityViewController.h; sourceTree = "<group>"; };
+		88F573AC215E3443006EE98E /* NJF_IcityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_IcityViewController.m; sourceTree = "<group>"; };
+		88F573AE215E345A006EE98E /* NJF_MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_MessageViewController.h; sourceTree = "<group>"; };
+		88F573AF215E345A006EE98E /* NJF_MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_MessageViewController.m; sourceTree = "<group>"; };
+		88F573B1215E3469006EE98E /* NJF_MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_MineViewController.h; sourceTree = "<group>"; };
+		88F573B2215E3469006EE98E /* NJF_MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_MineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +132,9 @@
 		883B8BA521481D520086F106 /* NJF_Project */ = {
 			isa = PBXGroup;
 			children = (
+				88F573A6215E340F006EE98E /* Icity */,
+				88F5739C215E340F006EE98E /* Message */,
+				88F573A1215E340F006EE98E /* Mine */,
 				88F57392215E0D5A006EE98E /* Home */,
 				88F5738C215E0C3E006EE98E /* Main */,
 				88542C4A214ABDB6002B33ED /* Category */,
@@ -127,7 +142,6 @@
 				883B8BA721481D520086F106 /* AppDelegate.m */,
 				883B8BAF21481D530086F106 /* Assets.xcassets */,
 				883B8BB121481D530086F106 /* LaunchScreen.storyboard */,
-				88542C59214FF5BB002B33ED /* TabBarItemConfig.plist */,
 				883B8BB421481D530086F106 /* Info.plist */,
 				883B8BB521481D530086F106 /* main.m */,
 			);
@@ -196,6 +210,7 @@
 		88F57391215E0CFD006EE98E /* MainConfig */ = {
 			isa = PBXGroup;
 			children = (
+				88542C59214FF5BB002B33ED /* TabBarItemConfig.plist */,
 				88542C51214C1175002B33ED /* NJF_MacroDefinition.h */,
 				88542C5B214FFDB8002B33ED /* NJF_PlistConfig.h */,
 				88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */,
@@ -238,6 +253,131 @@
 			sourceTree = "<group>";
 		};
 		88F57396215E0D5A006EE98E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88F57399215E32CA006EE98E /* NJF_HomeTableView.h */,
+				88F5739A215E32CA006EE98E /* NJF_HomeTableView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88F5739C215E340F006EE98E /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				88F5739D215E340F006EE98E /* Models */,
+				88F5739E215E340F006EE98E /* ViewControllers */,
+				88F5739F215E340F006EE98E /* ViewModels */,
+				88F573A0215E340F006EE98E /* Views */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		88F5739D215E340F006EE98E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88F5739E215E340F006EE98E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88F573AE215E345A006EE98E /* NJF_MessageViewController.h */,
+				88F573AF215E345A006EE98E /* NJF_MessageViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88F5739F215E340F006EE98E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		88F573A0215E340F006EE98E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88F573A1215E340F006EE98E /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				88F573A2215E340F006EE98E /* Models */,
+				88F573A3215E340F006EE98E /* ViewControllers */,
+				88F573A4215E340F006EE98E /* ViewModels */,
+				88F573A5215E340F006EE98E /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		88F573A2215E340F006EE98E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88F573A3215E340F006EE98E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88F573B1215E3469006EE98E /* NJF_MineViewController.h */,
+				88F573B2215E3469006EE98E /* NJF_MineViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88F573A4215E340F006EE98E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		88F573A5215E340F006EE98E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88F573A6215E340F006EE98E /* Icity */ = {
+			isa = PBXGroup;
+			children = (
+				88F573A7215E340F006EE98E /* Models */,
+				88F573A8215E340F006EE98E /* ViewControllers */,
+				88F573A9215E340F006EE98E /* ViewModels */,
+				88F573AA215E340F006EE98E /* Views */,
+			);
+			path = Icity;
+			sourceTree = "<group>";
+		};
+		88F573A7215E340F006EE98E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88F573A8215E340F006EE98E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88F573AB215E3443006EE98E /* NJF_IcityViewController.h */,
+				88F573AC215E3443006EE98E /* NJF_IcityViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88F573A9215E340F006EE98E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		88F573AA215E340F006EE98E /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -378,12 +518,16 @@
 				88542C4E214ABEA4002B33ED /* UIView+NJF_Extension.m in Sources */,
 				883B8BB621481D530086F106 /* main.m in Sources */,
 				88542C54214C1481002B33ED /* NJF_HomeController.m in Sources */,
+				88F5739B215E32CA006EE98E /* NJF_HomeTableView.m in Sources */,
 				88542C5D214FFDB8002B33ED /* NJF_PlistConfig.m in Sources */,
 				88542C41214961FD002B33ED /* NJF_TabBarController.m in Sources */,
 				883B8BA821481D520086F106 /* AppDelegate.m in Sources */,
+				88F573B0215E345A006EE98E /* NJF_MessageViewController.m in Sources */,
 				88542C472149623D002B33ED /* NJF_NavigationController.m in Sources */,
+				88F573B3215E3469006EE98E /* NJF_MineViewController.m in Sources */,
 				88155FFD21508F92000D21C6 /* UIViewController+NJF_VCCategory.m in Sources */,
 				88542C4421496212002B33ED /* NJF_TabBar.m in Sources */,
+				88F573AD215E3443006EE98E /* NJF_IcityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

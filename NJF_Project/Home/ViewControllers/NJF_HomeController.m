@@ -7,9 +7,10 @@
 //
 
 #import "NJF_HomeController.h"
+#import "NJF_HomeTableView.h"
 
 @interface NJF_HomeController ()
-
+@property (nonatomic, strong) NJF_HomeTableView *homeView;
 @end
 
 @implementation NJF_HomeController
@@ -18,12 +19,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    [self addChildViews];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)addChildViews{
+    [self.view addSubview:self.homeView];
 }
 
 
+#pragma mark - lazy loading
+- (NJF_HomeTableView *)homeView{
+    if (!_homeView) {
+        _homeView = [[NJF_HomeTableView alloc] initWithFrame:self.view.bounds];
+    }
+    return _homeView;
+}
 @end

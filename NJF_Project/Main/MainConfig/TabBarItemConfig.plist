@@ -14,7 +14,7 @@
 	</dict>
 	<dict>
 		<key>vc</key>
-		<string>NJF_HomeController</string>
+		<string>NJF_IcityViewController</string>
 		<key>title</key>
 		<string>同城</string>
 		<key>normalImgeName</key>
@@ -24,7 +24,7 @@
 	</dict>
 	<dict>
 		<key>vc</key>
-		<string>NJF_HomeController</string>
+		<string>NJF_MessageViewController</string>
 		<key>title</key>
 		<string>消息</string>
 		<key>normalImgeName</key>
@@ -34,7 +34,7 @@
 	</dict>
 	<dict>
 		<key>vc</key>
-		<string>NJF_HomeController</string>
+		<string>NJF_MineViewController</string>
 		<key>title</key>
 		<string>我的</string>
 		<key>normalImgeName</key>
