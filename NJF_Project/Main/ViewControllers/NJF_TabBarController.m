@@ -85,6 +85,7 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
         }
     }
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
