@@ -21,6 +21,8 @@
 		88542C54214C1481002B33ED /* NJF_HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C53214C1481002B33ED /* NJF_HomeController.m */; };
 		88542C5A214FF5BB002B33ED /* TabBarItemConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88542C59214FF5BB002B33ED /* TabBarItemConfig.plist */; };
 		88542C5D214FFDB8002B33ED /* NJF_PlistConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */; };
+		88E283A0215E75E1009A0720 /* NJF_UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E2839F215E75E1009A0720 /* NJF_UserInfoModel.m */; };
+		88E283A3215E7F4D009A0720 /* NJF_HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E283A2215E7F4D009A0720 /* NJF_HomeViewModel.m */; };
 		88F5739B215E32CA006EE98E /* NJF_HomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F5739A215E32CA006EE98E /* NJF_HomeTableView.m */; };
 		88F573AD215E3443006EE98E /* NJF_IcityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F573AC215E3443006EE98E /* NJF_IcityViewController.m */; };
 		88F573B0215E345A006EE98E /* NJF_MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F573AF215E345A006EE98E /* NJF_MessageViewController.m */; };
@@ -74,6 +76,10 @@
 		88542C59214FF5BB002B33ED /* TabBarItemConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabBarItemConfig.plist; sourceTree = "<group>"; };
 		88542C5B214FFDB8002B33ED /* NJF_PlistConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_PlistConfig.h; sourceTree = "<group>"; };
 		88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_PlistConfig.m; sourceTree = "<group>"; };
+		88E2839E215E75E1009A0720 /* NJF_UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_UserInfoModel.h; sourceTree = "<group>"; };
+		88E2839F215E75E1009A0720 /* NJF_UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_UserInfoModel.m; sourceTree = "<group>"; };
+		88E283A1215E7F4D009A0720 /* NJF_HomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_HomeViewModel.h; sourceTree = "<group>"; };
+		88E283A2215E7F4D009A0720 /* NJF_HomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_HomeViewModel.m; sourceTree = "<group>"; };
 		88F57399215E32CA006EE98E /* NJF_HomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_HomeTableView.h; sourceTree = "<group>"; };
 		88F5739A215E32CA006EE98E /* NJF_HomeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_HomeTableView.m; sourceTree = "<group>"; };
 		88F573AB215E3443006EE98E /* NJF_IcityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_IcityViewController.h; sourceTree = "<group>"; };
@@ -177,6 +183,24 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		88E2839C215E75A4009A0720 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88E2839E215E75E1009A0720 /* NJF_UserInfoModel.h */,
+				88E2839F215E75E1009A0720 /* NJF_UserInfoModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88E2839D215E75A4009A0720 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				88E283A1215E7F4D009A0720 /* NJF_HomeViewModel.h */,
+				88E283A2215E7F4D009A0720 /* NJF_HomeViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		88F5738C215E0C3E006EE98E /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,19 +245,12 @@
 		88F57392215E0D5A006EE98E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				88F57393215E0D5A006EE98E /* Models */,
+				88E2839C215E75A4009A0720 /* Models */,
+				88E2839D215E75A4009A0720 /* ViewModels */,
 				88F57394215E0D5A006EE98E /* ViewControllers */,
-				88F57395215E0D5A006EE98E /* ViewModels */,
 				88F57396215E0D5A006EE98E /* Views */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		88F57393215E0D5A006EE98E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		88F57394215E0D5A006EE98E /* ViewControllers */ = {
@@ -243,13 +260,6 @@
 				88542C53214C1481002B33ED /* NJF_HomeController.m */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		88F57395215E0D5A006EE98E /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		88F57396215E0D5A006EE98E /* Views */ = {
@@ -516,9 +526,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				88542C4E214ABEA4002B33ED /* UIView+NJF_Extension.m in Sources */,
+				88E283A0215E75E1009A0720 /* NJF_UserInfoModel.m in Sources */,
 				883B8BB621481D530086F106 /* main.m in Sources */,
 				88542C54214C1481002B33ED /* NJF_HomeController.m in Sources */,
 				88F5739B215E32CA006EE98E /* NJF_HomeTableView.m in Sources */,
+				88E283A3215E7F4D009A0720 /* NJF_HomeViewModel.m in Sources */,
 				88542C5D214FFDB8002B33ED /* NJF_PlistConfig.m in Sources */,
 				88542C41214961FD002B33ED /* NJF_TabBarController.m in Sources */,
 				883B8BA821481D520086F106 /* AppDelegate.m in Sources */,

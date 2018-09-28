@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NJF_UserInfoModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NJF_HomeTableView : UIView
+
+@property (nonatomic, strong) NSArray <NJF_UserInfoModel *> *userInfoModelArr;
 
 @end
 

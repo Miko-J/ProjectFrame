@@ -8,7 +8,7 @@
 
 #import "NJF_HomeTableView.h"
 
-@interface NJF_HomeTableView()<UITableViewDelegate>
+@interface NJF_HomeTableView()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @end
 
@@ -24,24 +24,31 @@
 - (void)addChildViews{
     [self addSubview:self.tableView];
 }
+
+- (void)setUserInfoModelArr:(NSArray<NJF_UserInfoModel *> *)userInfoModelArr{
+    _userInfoModelArr = userInfoModelArr;
+}
+
 #pragma mark - UITableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return self.userInfoModelArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = nil;
     static NSString *identifier = @"cell";
-    cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] init];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
-    cell.textLabel.text = @"hahahh";
+    NJF_UserInfoModel *userInfoModel = self.userInfoModelArr[indexPath.row];
+    cell.textLabel.text = userInfoModel.name;
+    cell.detailTextLabel.text = userInfoModel.des;
     cell.textLabel.textColor = [UIColor grayColor];
+    cell.detailTextLabel.textColor = [UIColor blackColor];
     return cell;
 }
 
@@ -50,6 +57,7 @@
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
         _tableView.delegate = self;
+        _tableView.dataSource = self;
     }
     return _tableView;
 }
