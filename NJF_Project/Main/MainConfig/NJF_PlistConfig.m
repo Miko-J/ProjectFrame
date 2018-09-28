@@ -10,7 +10,7 @@
 
 @interface NJF_PlistConfig()
 @property (nonatomic, copy) NSString *configName;
-@property (nonatomic, strong) NSArray <NSDictionary *> *itemArr;
+@property (nonatomic, copy) void(^configUrlBlock)(NSURL *url);
 @end
 @implementation NJF_PlistConfig
 
@@ -18,13 +18,18 @@
     
 }
 
-- (nullable instancetype)initWithName:(NSString *)configName{
+- (instancetype)initWithName:(NSString *)configName url:(void(^)(NSURL *configUrl))url{
     self = [super init];
     if (self) {
         self.configName = configName;
+        self.configUrlBlock = url;
         [self loadConfig];
     }
     return self;
+}
+
++ (nullable instancetype)configWithName:(NSString *)configName url:(void(^)(NSURL *configUrl))url{
+    return [[self alloc] initWithName:configName url:url];
 }
 
 - (NSURL *)urlWithName:(NSString *)configName {
@@ -49,7 +54,9 @@
     if (!configUrl) {
         return NO;
     }
-    self.itemArr = [NSArray arrayWithContentsOfURL:configUrl];
+    if (self.configUrlBlock) {
+        self.configUrlBlock(configUrl);
+    }
     return YES;
 }
 

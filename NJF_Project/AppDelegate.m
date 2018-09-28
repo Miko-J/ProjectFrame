@@ -21,12 +21,7 @@
     
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    NSArray <NSDictionary *> *itemArr = @[@{@"vc":[UIViewController new],@"title":@"首页",@"normalImgeName":@"home_normal",@"selImgeName":@"home_highlight"},
-                                          @{@"vc":[UIViewController new],@"title":@"同城",@"normalImgeName":@"mycity_normal",@"selImgeName":@"mycity_highlight"},
-                                          @{@"vc":[UIViewController new],@"title":@"消息",@"normalImgeName":@"message_normal",@"selImgeName":@"message_highlight"},
-                                          @{@"vc":[UIViewController new],@"title":@"我的",@"normalImgeName":@"account_normal",@"selImgeName":@"account_highlight"},
-                                          ];
-    NJF_TabBarController *tabBarVC = [[NJF_TabBarController alloc] initWithItemArr:itemArr];
+    NJF_TabBarController *tabBarVC = [[NJF_TabBarController alloc] init];
     self.window.rootViewController = tabBarVC;
     [self.window makeKeyAndVisible];
     return YES;

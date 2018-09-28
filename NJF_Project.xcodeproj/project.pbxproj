@@ -70,7 +70,6 @@
 		88542C59214FF5BB002B33ED /* TabBarItemConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabBarItemConfig.plist; sourceTree = "<group>"; };
 		88542C5B214FFDB8002B33ED /* NJF_PlistConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_PlistConfig.h; sourceTree = "<group>"; };
 		88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_PlistConfig.m; sourceTree = "<group>"; };
-		88542C5E2150001B002B33ED /* NJF_PlistConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_PlistConfigProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,26 +120,16 @@
 		883B8BA521481D520086F106 /* NJF_Project */ = {
 			isa = PBXGroup;
 			children = (
+				88F57392215E0D5A006EE98E /* Home */,
+				88F5738C215E0C3E006EE98E /* Main */,
 				88542C4A214ABDB6002B33ED /* Category */,
 				883B8BA621481D520086F106 /* AppDelegate.h */,
 				883B8BA721481D520086F106 /* AppDelegate.m */,
-				88542C52214C1481002B33ED /* NJF_HomeController.h */,
-				88542C53214C1481002B33ED /* NJF_HomeController.m */,
 				883B8BAF21481D530086F106 /* Assets.xcassets */,
 				883B8BB121481D530086F106 /* LaunchScreen.storyboard */,
 				88542C59214FF5BB002B33ED /* TabBarItemConfig.plist */,
 				883B8BB421481D530086F106 /* Info.plist */,
 				883B8BB521481D530086F106 /* main.m */,
-				88542C51214C1175002B33ED /* NJF_MacroDefinition.h */,
-				88542C3F214961FD002B33ED /* NJF_TabBarController.h */,
-				88542C40214961FD002B33ED /* NJF_TabBarController.m */,
-				88542C4221496212002B33ED /* NJF_TabBar.h */,
-				88542C4321496212002B33ED /* NJF_TabBar.m */,
-				88542C452149623D002B33ED /* NJF_NavigationController.h */,
-				88542C462149623D002B33ED /* NJF_NavigationController.m */,
-				88542C5B214FFDB8002B33ED /* NJF_PlistConfig.h */,
-				88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */,
-				88542C5E2150001B002B33ED /* NJF_PlistConfigProtocol.h */,
 			);
 			path = NJF_Project;
 			sourceTree = "<group>";
@@ -172,6 +161,87 @@
 				88155FFC21508F92000D21C6 /* UIViewController+NJF_VCCategory.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		88F5738C215E0C3E006EE98E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				88F57391215E0CFD006EE98E /* MainConfig */,
+				88F5738E215E0C3E006EE98E /* ViewControllers */,
+				88F57390215E0C3E006EE98E /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		88F5738E215E0C3E006EE98E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88542C3F214961FD002B33ED /* NJF_TabBarController.h */,
+				88542C40214961FD002B33ED /* NJF_TabBarController.m */,
+				88542C452149623D002B33ED /* NJF_NavigationController.h */,
+				88542C462149623D002B33ED /* NJF_NavigationController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88F57390215E0C3E006EE98E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88542C4221496212002B33ED /* NJF_TabBar.h */,
+				88542C4321496212002B33ED /* NJF_TabBar.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88F57391215E0CFD006EE98E /* MainConfig */ = {
+			isa = PBXGroup;
+			children = (
+				88542C51214C1175002B33ED /* NJF_MacroDefinition.h */,
+				88542C5B214FFDB8002B33ED /* NJF_PlistConfig.h */,
+				88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */,
+			);
+			path = MainConfig;
+			sourceTree = "<group>";
+		};
+		88F57392215E0D5A006EE98E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				88F57393215E0D5A006EE98E /* Models */,
+				88F57394215E0D5A006EE98E /* ViewControllers */,
+				88F57395215E0D5A006EE98E /* ViewModels */,
+				88F57396215E0D5A006EE98E /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		88F57393215E0D5A006EE98E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88F57394215E0D5A006EE98E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88542C52214C1481002B33ED /* NJF_HomeController.h */,
+				88542C53214C1481002B33ED /* NJF_HomeController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88F57395215E0D5A006EE98E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		88F57396215E0D5A006EE98E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
