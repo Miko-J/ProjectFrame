@@ -1,2 +1,3 @@
 # ProjectFrame
-简单的oc框架
+简单的oc-mvvm框架
+看了猿题库项目架构划分，DataManger和ViewModel是分开的，考虑到平时做的项目包功能不是很复杂，还是用了一个vm做了数据逻辑和视图逻辑的定制化，后续demo会向组件化方向发展
