@@ -12,6 +12,7 @@
 
 @interface NJF_HomeController ()
 @property (nonatomic, strong) NJF_HomeTableView *homeView;
+@property (nonatomic, strong) NJF_HomeViewModel *homeViewModel;
 @end
 
 @implementation NJF_HomeController
@@ -29,16 +30,25 @@
 
 - (void)requestData{
     __weak typeof(self) weakSelf = self;
-    [NJF_HomeViewModel requestUserData:^(id data) {
+    [self.homeViewModel requestUserData:^(id data) {
+        NSLog(@"%@",data);
         __strong typeof(self) strongSelf = weakSelf;
-        strongSelf.homeView.userInfoModelArr = data;
+        strongSelf.homeView.homeViewModel = strongSelf.homeViewModel;
     }];
 }
+
 #pragma mark - lazy loading
 - (NJF_HomeTableView *)homeView{
     if (!_homeView) {
         _homeView = [[NJF_HomeTableView alloc] initWithFrame:self.view.bounds];
     }
     return _homeView;
+}
+
+- (NJF_HomeViewModel *)homeViewModel{
+    if (!_homeViewModel) {
+        _homeViewModel = [[NJF_HomeViewModel alloc] init];
+    }
+    return _homeViewModel;
 }
 @end

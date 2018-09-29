@@ -25,8 +25,8 @@
     [self addSubview:self.tableView];
 }
 
-- (void)setUserInfoModelArr:(NSArray<NJF_UserInfoModel *> *)userInfoModelArr{
-    _userInfoModelArr = userInfoModelArr;
+- (void)setHomeViewModel:(NJF_HomeViewModel *)homeViewModel{
+    _homeViewModel = homeViewModel;
 }
 
 #pragma mark - UITableViewDelegate
@@ -35,7 +35,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.userInfoModelArr.count;
+    return self.homeViewModel.userInfoArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -44,11 +44,11 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
-    NJF_UserInfoModel *userInfoModel = self.userInfoModelArr[indexPath.row];
+    NJF_UserInfoModel *userInfoModel = self.homeViewModel.userInfoArr[indexPath.row];
     cell.textLabel.text = userInfoModel.name;
     cell.detailTextLabel.text = userInfoModel.des;
-    cell.textLabel.textColor = [UIColor grayColor];
-    cell.detailTextLabel.textColor = [UIColor blackColor];
+    cell.textLabel.textColor = self.homeViewModel.textColor;
+    cell.detailTextLabel.textColor = self.homeViewModel.detailTextColor;
     return cell;
 }
 
