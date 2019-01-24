@@ -24,6 +24,9 @@
 		88542C5D214FFDB8002B33ED /* NJF_PlistConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 88542C5C214FFDB8002B33ED /* NJF_PlistConfig.m */; };
 		88E283A0215E75E1009A0720 /* NJF_UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E2839F215E75E1009A0720 /* NJF_UserInfoModel.m */; };
 		88E283A3215E7F4D009A0720 /* NJF_HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E283A2215E7F4D009A0720 /* NJF_HomeViewModel.m */; };
+		88EC8F0721F9B0F300661C95 /* NJF_NetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F0621F9B0F300661C95 /* NJF_NetworkTool.m */; };
+		88EC8F0C21F9B98D00661C95 /* NJF_InterfacedConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F0B21F9B98D00661C95 /* NJF_InterfacedConst.m */; };
+		88EC8F0F21F9BB6500661C95 /* NJF_HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F0E21F9BB6500661C95 /* NJF_HttpRequest.m */; };
 		88F5739B215E32CA006EE98E /* NJF_HomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F5739A215E32CA006EE98E /* NJF_HomeTableView.m */; };
 		88F573AD215E3443006EE98E /* NJF_IcityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F573AC215E3443006EE98E /* NJF_IcityViewController.m */; };
 		88F573B0215E345A006EE98E /* NJF_MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F573AF215E345A006EE98E /* NJF_MessageViewController.m */; };
@@ -83,6 +86,12 @@
 		88E2839F215E75E1009A0720 /* NJF_UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_UserInfoModel.m; sourceTree = "<group>"; };
 		88E283A1215E7F4D009A0720 /* NJF_HomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_HomeViewModel.h; sourceTree = "<group>"; };
 		88E283A2215E7F4D009A0720 /* NJF_HomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_HomeViewModel.m; sourceTree = "<group>"; };
+		88EC8F0521F9B0F300661C95 /* NJF_NetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_NetworkTool.h; sourceTree = "<group>"; };
+		88EC8F0621F9B0F300661C95 /* NJF_NetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_NetworkTool.m; sourceTree = "<group>"; };
+		88EC8F0A21F9B98D00661C95 /* NJF_InterfacedConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_InterfacedConst.h; sourceTree = "<group>"; };
+		88EC8F0B21F9B98D00661C95 /* NJF_InterfacedConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_InterfacedConst.m; sourceTree = "<group>"; };
+		88EC8F0D21F9BB6500661C95 /* NJF_HttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_HttpRequest.h; sourceTree = "<group>"; };
+		88EC8F0E21F9BB6500661C95 /* NJF_HttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_HttpRequest.m; sourceTree = "<group>"; };
 		88F57399215E32CA006EE98E /* NJF_HomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_HomeTableView.h; sourceTree = "<group>"; };
 		88F5739A215E32CA006EE98E /* NJF_HomeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_HomeTableView.m; sourceTree = "<group>"; };
 		88F573AB215E3443006EE98E /* NJF_IcityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_IcityViewController.h; sourceTree = "<group>"; };
@@ -162,6 +171,7 @@
 		883B8BA521481D520086F106 /* NJF_Project */ = {
 			isa = PBXGroup;
 			children = (
+				88EC8F0421F9B07100661C95 /* AFNTool */,
 				88F573A6215E340F006EE98E /* Icity */,
 				88F5739C215E340F006EE98E /* Message */,
 				88F573A1215E340F006EE98E /* Mine */,
@@ -223,6 +233,19 @@
 				88E283A2215E7F4D009A0720 /* NJF_HomeViewModel.m */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		88EC8F0421F9B07100661C95 /* AFNTool */ = {
+			isa = PBXGroup;
+			children = (
+				88EC8F0521F9B0F300661C95 /* NJF_NetworkTool.h */,
+				88EC8F0621F9B0F300661C95 /* NJF_NetworkTool.m */,
+				88EC8F0A21F9B98D00661C95 /* NJF_InterfacedConst.h */,
+				88EC8F0B21F9B98D00661C95 /* NJF_InterfacedConst.m */,
+				88EC8F0D21F9BB6500661C95 /* NJF_HttpRequest.h */,
+				88EC8F0E21F9BB6500661C95 /* NJF_HttpRequest.m */,
+			);
+			path = AFNTool;
 			sourceTree = "<group>";
 		};
 		88F5738C215E0C3E006EE98E /* Main */ = {
@@ -599,6 +622,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88542C4E214ABEA4002B33ED /* UIView+NJF_Extension.m in Sources */,
+				88EC8F0721F9B0F300661C95 /* NJF_NetworkTool.m in Sources */,
+				88EC8F0C21F9B98D00661C95 /* NJF_InterfacedConst.m in Sources */,
 				88E283A0215E75E1009A0720 /* NJF_UserInfoModel.m in Sources */,
 				883B8BB621481D530086F106 /* main.m in Sources */,
 				88542C54214C1481002B33ED /* NJF_HomeController.m in Sources */,
@@ -606,6 +631,7 @@
 				88E283A3215E7F4D009A0720 /* NJF_HomeViewModel.m in Sources */,
 				88542C5D214FFDB8002B33ED /* NJF_PlistConfig.m in Sources */,
 				88542C41214961FD002B33ED /* NJF_TabBarController.m in Sources */,
+				88EC8F0F21F9BB6500661C95 /* NJF_HttpRequest.m in Sources */,
 				883B8BA821481D520086F106 /* AppDelegate.m in Sources */,
 				88F573B0215E345A006EE98E /* NJF_MessageViewController.m in Sources */,
 				88542C472149623D002B33ED /* NJF_NavigationController.m in Sources */,
