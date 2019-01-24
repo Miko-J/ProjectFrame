@@ -41,8 +41,6 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
     [self setCustomtabbar];
 }
 
-
-
 #pragma mark - 设置自定义中心按钮
 - (void)setCustomtabbar{
     NJF_TabBar *tabbar = [[NJF_TabBar alloc]init];
@@ -79,7 +77,7 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
     }
 }
 
-/// 向上移动
+/// 弹簧动画
 - (void)addUpTranslationAnimtaionWithArr:(NSMutableArray *)arry index:(NSInteger)index
 {
     //需要实现的帧动画,这里根据需求自定义

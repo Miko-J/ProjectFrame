@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C1DEE5A522EBFE49110BC99 /* Pods_NJF_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECA01E8B33D18C4481B5BE4 /* Pods_NJF_Project.framework */; };
 		88155FFD21508F92000D21C6 /* UIViewController+NJF_VCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 88155FFC21508F92000D21C6 /* UIViewController+NJF_VCCategory.m */; };
 		883B8BA821481D520086F106 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 883B8BA721481D520086F106 /* AppDelegate.m */; };
 		883B8BB021481D530086F106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883B8BAF21481D530086F106 /* Assets.xcassets */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		155F17EBC7B071BB0E20739E /* Pods-NJF_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJF_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-NJF_Project/Pods-NJF_Project.release.xcconfig"; sourceTree = "<group>"; };
+		46BCE235AEB798E6F3A098F2 /* Pods-NJF_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJF_Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NJF_Project/Pods-NJF_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		88155FFB21508F92000D21C6 /* UIViewController+NJF_VCCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NJF_VCCategory.h"; sourceTree = "<group>"; };
 		88155FFC21508F92000D21C6 /* UIViewController+NJF_VCCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NJF_VCCategory.m"; sourceTree = "<group>"; };
 		883B8BA321481D520086F106 /* NJF_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NJF_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,7 @@
 		88F573AF215E345A006EE98E /* NJF_MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_MessageViewController.m; sourceTree = "<group>"; };
 		88F573B1215E3469006EE98E /* NJF_MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_MineViewController.h; sourceTree = "<group>"; };
 		88F573B2215E3469006EE98E /* NJF_MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_MineViewController.m; sourceTree = "<group>"; };
+		9ECA01E8B33D18C4481B5BE4 /* Pods_NJF_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NJF_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1DEE5A522EBFE49110BC99 /* Pods_NJF_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +120,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3066EA1C22374340DA12AC61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46BCE235AEB798E6F3A098F2 /* Pods-NJF_Project.debug.xcconfig */,
+				155F17EBC7B071BB0E20739E /* Pods-NJF_Project.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49A368398B08DEBF1B10CF28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ECA01E8B33D18C4481B5BE4 /* Pods_NJF_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		883B8B9A21481D520086F106 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +144,8 @@
 				883B8BBE21481D530086F106 /* NJF_ProjectTests */,
 				883B8BC921481D530086F106 /* NJF_ProjectUITests */,
 				883B8BA421481D520086F106 /* Products */,
+				3066EA1C22374340DA12AC61 /* Pods */,
+				49A368398B08DEBF1B10CF28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -401,9 +425,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 883B8BCF21481D530086F106 /* Build configuration list for PBXNativeTarget "NJF_Project" */;
 			buildPhases = (
+				D1C16D385BAC377F53FC2E0E /* [CP] Check Pods Manifest.lock */,
 				883B8B9F21481D520086F106 /* Sources */,
 				883B8BA021481D520086F106 /* Frameworks */,
 				883B8BA121481D520086F106 /* Resources */,
+				D78280C7C9A574E02C566BF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -519,6 +545,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D1C16D385BAC377F53FC2E0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NJF_Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D78280C7C9A574E02C566BF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NJF_Project/Pods-NJF_Project-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NJF_Project/Pods-NJF_Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		883B8B9F21481D520086F106 /* Sources */ = {
@@ -698,6 +771,7 @@
 		};
 		883B8BD021481D530086F106 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46BCE235AEB798E6F3A098F2 /* Pods-NJF_Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -717,6 +791,7 @@
 		};
 		883B8BD121481D530086F106 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 155F17EBC7B071BB0E20739E /* Pods-NJF_Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
