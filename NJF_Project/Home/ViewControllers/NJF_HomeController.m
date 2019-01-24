@@ -38,6 +38,7 @@
 }
 
 #pragma mark - lazy loading
+
 - (NJF_HomeTableView *)homeView{
     if (!_homeView) {
         _homeView = [[NJF_HomeTableView alloc] initWithFrame:self.view.bounds];

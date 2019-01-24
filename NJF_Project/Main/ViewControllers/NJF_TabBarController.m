@@ -15,6 +15,10 @@
 
 static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
 
+@interface NJF_TabBarController ()
+@property (nonatomic, assign) NSInteger indexFlag;
+@end
+
 @implementation NJF_TabBarController
 
 
@@ -43,6 +47,7 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
 - (void)setCustomtabbar{
     NJF_TabBar *tabbar = [[NJF_TabBar alloc]init];
     [self setValue:tabbar forKeyPath:@"tabBar"];
+    NSLog(@"数量%lu",(unsigned long)self.tabBar.subviews.count);
 }
 
 - (void)addChildVC:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage{
@@ -59,19 +64,26 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
 {
     NSLog(@"点击的item:%ld title:%@", item.tag, item.title);
-    [self itemAnimation];
-}
-
-- (void)itemAnimation{
-    for (UIControl *tabBarButton in self.tabBar.subviews) {
-        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-            [tabBarButton addTarget:self action:@selector(tabBarButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    NSInteger index = [self.tabBar.items indexOfObject:item];
+    if (index != self.indexFlag) {
+        //执行动画
+        NSMutableArray *arry = [NSMutableArray array];
+        for (UIControl *btn in self.tabBar.subviews) {
+            if ([btn isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+                [arry addObject:btn];
+            }
         }
+        //添加动画
+        [self addUpTranslationAnimtaionWithArr:arry index:index];
+        self.indexFlag = index;
     }
 }
 
-- (void)tabBarButtonClick:(UIControl *)tabBarButton
+/// 向上移动
+- (void)addUpTranslationAnimtaionWithArr:(NSMutableArray *)arry index:(NSInteger)index
 {
+    //需要实现的帧动画,这里根据需求自定义
+    UIControl *tabBarButton = arry[index];
     for (UIView *imageView in tabBarButton.subviews) {
         if ([imageView isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
             //需要实现的帧动画,这里根据需求自定义
@@ -84,6 +96,7 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
             [imageView.layer addAnimation:animation forKey:nil];
         }
     }
+    //[[arry[index] layer] addAnimation:animation forKey:nil];
 }
 
 - (void)didReceiveMemoryWarning {
