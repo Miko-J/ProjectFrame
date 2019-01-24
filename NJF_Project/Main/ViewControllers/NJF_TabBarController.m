@@ -53,7 +53,7 @@ static NSString *const NJF_ITEM_CONFIG = @"TabBarItemConfig.plist";
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    NSDictionary *dict = [NSDictionary dictionaryWithObject:NJF_RGBCOLOR(255, 211, 59) forKey:NSForegroundColorAttributeName];
+    NSDictionary *dict = [NSDictionary dictionaryWithObject:RGBCOLOR(255, 211, 59) forKey:NSForegroundColorAttributeName];
     [vc.tabBarItem setTitleTextAttributes:dict forState:UIControlStateSelected];
     NJF_NavigationController *nav = [[NJF_NavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
