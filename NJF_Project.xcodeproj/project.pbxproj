@@ -48,6 +48,7 @@
 		88EC8F4B21F9C93100661C95 /* TZTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F3821F9C93100661C95 /* TZTestCell.m */; };
 		88EC8F4F21FABDCB00661C95 /* NJF_PhotoSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F4E21FABDCB00661C95 /* NJF_PhotoSelectView.m */; };
 		88EC8F5221FAEB9E00661C95 /* LxGridViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F5121FAEB9E00661C95 /* LxGridViewFlowLayout.m */; };
+		88EC8F5521FAF76900661C95 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F5421FAF76900661C95 /* UIView+Toast.m */; };
 		88F5739B215E32CA006EE98E /* NJF_HomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F5739A215E32CA006EE98E /* NJF_HomeTableView.m */; };
 		88F573AD215E3443006EE98E /* NJF_IcityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F573AC215E3443006EE98E /* NJF_IcityViewController.m */; };
 		88F573B0215E345A006EE98E /* NJF_MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F573AF215E345A006EE98E /* NJF_MessageViewController.m */; };
@@ -154,6 +155,8 @@
 		88EC8F4E21FABDCB00661C95 /* NJF_PhotoSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_PhotoSelectView.m; sourceTree = "<group>"; };
 		88EC8F5021FAEB9D00661C95 /* LxGridViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxGridViewFlowLayout.h; sourceTree = "<group>"; };
 		88EC8F5121FAEB9E00661C95 /* LxGridViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LxGridViewFlowLayout.m; sourceTree = "<group>"; };
+		88EC8F5321FAF76900661C95 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		88EC8F5421FAF76900661C95 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		88F57399215E32CA006EE98E /* NJF_HomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_HomeTableView.h; sourceTree = "<group>"; };
 		88F5739A215E32CA006EE98E /* NJF_HomeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_HomeTableView.m; sourceTree = "<group>"; };
 		88F573AB215E3443006EE98E /* NJF_IcityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_IcityViewController.h; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 		88542C4A214ABDB6002B33ED /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				88EC8F5321FAF76900661C95 /* UIView+Toast.h */,
+				88EC8F5421FAF76900661C95 /* UIView+Toast.m */,
 				88542C4C214ABEA4002B33ED /* UIView+NJF_Extension.h */,
 				88542C4D214ABEA4002B33ED /* UIView+NJF_Extension.m */,
 				88155FFB21508F92000D21C6 /* UIViewController+NJF_VCCategory.h */,
@@ -786,6 +791,7 @@
 				88542C41214961FD002B33ED /* NJF_TabBarController.m in Sources */,
 				88EC8F4F21FABDCB00661C95 /* NJF_PhotoSelectView.m in Sources */,
 				88EC8F4A21F9C93100661C95 /* UIView+Layout.m in Sources */,
+				88EC8F5521FAF76900661C95 /* UIView+Toast.m in Sources */,
 				88EC8F4921F9C93100661C95 /* TZVideoPlayerController.m in Sources */,
 				88EC8F4321F9C93100661C95 /* TZImageRequestOperation.m in Sources */,
 				88EC8F4721F9C93100661C95 /* TZPhotoPreviewController.m in Sources */,
