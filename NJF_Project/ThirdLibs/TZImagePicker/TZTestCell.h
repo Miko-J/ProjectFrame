@@ -14,7 +14,6 @@
 @property (nonatomic, strong) UIButton *deleteBtn;
 @property (nonatomic, strong) UILabel *gifLable;
 @property (nonatomic, assign) NSInteger row;
-@property (nonatomic, strong) UIView *marginView;
 @property (nonatomic, strong) id asset;
 @property (nonatomic, strong) void(^deleBtnBlock)(NSInteger item);
 - (UIView *)snapshotView;

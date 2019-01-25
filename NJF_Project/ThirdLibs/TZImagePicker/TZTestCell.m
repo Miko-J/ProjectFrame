@@ -18,18 +18,14 @@
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
         _imageView = [[UIImageView alloc] init];
-        _imageView.backgroundColor = [UIColor colorWithWhite:1.000 alpha:0.500];
         _imageView.contentMode = UIViewContentModeScaleAspectFill;
         [self addSubview:_imageView];
         self.clipsToBounds = YES;
         _deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_deleteBtn setBackgroundImage:[UIImage imageNamed:@"TownSqureDeletePhoto"] forState:UIControlStateNormal];
+        [_deleteBtn setBackgroundImage:[UIImage imageNamed:@"Mine_Photo_Del"] forState:UIControlStateNormal];
         _deleteBtn.imageEdgeInsets = UIEdgeInsetsMake(-10, 0, 0, -10);
         [_deleteBtn addTarget:self action:@selector(deleteBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         _deleteBtn.alpha = 0.6;
-        _marginView = [[UIView alloc] init];
-        _marginView.backgroundColor = [UIColor whiteColor];
-        [self addSubview:_marginView];
         [self addSubview:_deleteBtn];
     }
     return self;
@@ -37,9 +33,8 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    _imageView.frame = CGRectMake(0, 0, self.width, self.height - 10);
+    _imageView.frame = CGRectMake(0, 0, self.width, self.height);
     _deleteBtn.frame = CGRectMake(self.width - 17, 0, 17, 17);
-    _marginView.frame = CGRectMake(0, self.height - 10, self.width, 10);
 }
 
 - (void)setRow:(NSInteger)row {

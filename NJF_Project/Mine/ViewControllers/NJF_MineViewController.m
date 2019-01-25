@@ -7,26 +7,29 @@
 //
 
 #import "NJF_MineViewController.h"
+#import "NJF_PhotoSelectView.h"
+#import "NJF_MacroDefinition.h"
 
 @interface NJF_MineViewController ()
-
+@property (nonatomic, strong) NJF_PhotoSelectView *phtotoSelView;
 @end
 
 @implementation NJF_MineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor purpleColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self addChildView];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)addChildView{
+    self.phtotoSelView = ({
+        NJF_PhotoSelectView *photoSelView = [[NJF_PhotoSelectView alloc] initWithFrame:CGRectMake(0, 20, kScreenWidth , 500)];
+        photoSelView.maxCountTF = 9;
+        photoSelView.VC = self;
+        [self.view addSubview:photoSelView];
+        photoSelView;
+    });
 }
-*/
 
 @end

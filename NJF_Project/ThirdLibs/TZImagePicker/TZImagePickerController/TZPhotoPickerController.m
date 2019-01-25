@@ -497,7 +497,7 @@ static CGFloat itemMargin = 5;
     if (((tzImagePickerVc.sortAscendingByModificationDate && indexPath.item >= _models.count) || (!tzImagePickerVc.sortAscendingByModificationDate && indexPath.item == 0)) && _showTakePhotoBtn) {
         TZAssetCameraCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TZAssetCameraCell" forIndexPath:indexPath];
         cell.imageView.image = tzImagePickerVc.takePictureImage;
-        if ([tzImagePickerVc.takePictureImageName isEqualToString:@"TownSqureTakeCaremaInner"]) {
+        if ([tzImagePickerVc.takePictureImageName isEqualToString:@"takePicture80"]) {
             cell.imageView.contentMode = UIViewContentModeCenter;
             CGFloat rgb = 223 / 255.0;
             cell.imageView.backgroundColor = [UIColor colorWithRed:rgb green:rgb blue:rgb alpha:1.0];
