@@ -7,6 +7,7 @@
 //
 
 #import "NJF_MessageViewController.h"
+#import "UIView+Toast.h"
 
 @interface NJF_MessageViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
+    [self.navigationController.view makeToast:@"This is a piece of toast on top for 3 seconds"
+                                     duration:3.0
+                                     position:CSToastPositionCenter];
 }
 
 /*
