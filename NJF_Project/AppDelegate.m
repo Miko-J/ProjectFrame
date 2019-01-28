@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "NJF_TabBarController.h"
+#import "NJF_AppLaunchHelper.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [NJF_AppLaunchHelper.shared autoInitModule];
     
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;

@@ -14,17 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Bugly (2.5.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - Bugly
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Bugly
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
 
-PODFILE CHECKSUM: 12ee90ef97cc16fe1d547660f8a9b7f6d36b9b4d
+PODFILE CHECKSUM: 1f1fcf046268f44b456e5d903ab077ad0a2c2e29
 
 COCOAPODS: 1.5.3

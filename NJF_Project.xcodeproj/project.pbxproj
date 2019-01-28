@@ -49,6 +49,12 @@
 		88EC8F4F21FABDCB00661C95 /* NJF_PhotoSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F4E21FABDCB00661C95 /* NJF_PhotoSelectView.m */; };
 		88EC8F5221FAEB9E00661C95 /* LxGridViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F5121FAEB9E00661C95 /* LxGridViewFlowLayout.m */; };
 		88EC8F5521FAF76900661C95 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F5421FAF76900661C95 /* UIView+Toast.m */; };
+		88EC8F5A21FEE09000661C95 /* AutoInitialize.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88EC8F5921FEE09000661C95 /* AutoInitialize.plist */; };
+		88EC8F5C21FEE10100661C95 /* AppConfigurator.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88EC8F5B21FEE10100661C95 /* AppConfigurator.plist */; };
+		88EC8F5F21FEE27F00661C95 /* NJF_BuglyConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F5E21FEE27F00661C95 /* NJF_BuglyConfigurator.m */; };
+		88EC8F6321FEE4AA00661C95 /* NJF_AppLaunchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F6221FEE4AA00661C95 /* NJF_AppLaunchHelper.m */; };
+		88EC8F6621FEE69100661C95 /* NJF_InvocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F6521FEE69100661C95 /* NJF_InvocationHelper.m */; };
+		88EC8F7221FEF06400661C95 /* NSObject+NJF_ConfiguratorTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC8F7121FEF06400661C95 /* NSObject+NJF_ConfiguratorTool.swift */; };
 		88F5739B215E32CA006EE98E /* NJF_HomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F5739A215E32CA006EE98E /* NJF_HomeTableView.m */; };
 		88F573AD215E3443006EE98E /* NJF_IcityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F573AC215E3443006EE98E /* NJF_IcityViewController.m */; };
 		88F573B0215E345A006EE98E /* NJF_MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F573AF215E345A006EE98E /* NJF_MessageViewController.m */; };
@@ -157,6 +163,16 @@
 		88EC8F5121FAEB9E00661C95 /* LxGridViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LxGridViewFlowLayout.m; sourceTree = "<group>"; };
 		88EC8F5321FAF76900661C95 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		88EC8F5421FAF76900661C95 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		88EC8F5921FEE09000661C95 /* AutoInitialize.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AutoInitialize.plist; sourceTree = "<group>"; };
+		88EC8F5B21FEE10100661C95 /* AppConfigurator.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppConfigurator.plist; sourceTree = "<group>"; };
+		88EC8F5D21FEE27F00661C95 /* NJF_BuglyConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_BuglyConfigurator.h; sourceTree = "<group>"; };
+		88EC8F5E21FEE27F00661C95 /* NJF_BuglyConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_BuglyConfigurator.m; sourceTree = "<group>"; };
+		88EC8F6121FEE4AA00661C95 /* NJF_AppLaunchHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_AppLaunchHelper.h; sourceTree = "<group>"; };
+		88EC8F6221FEE4AA00661C95 /* NJF_AppLaunchHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_AppLaunchHelper.m; sourceTree = "<group>"; };
+		88EC8F6421FEE69100661C95 /* NJF_InvocationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_InvocationHelper.h; sourceTree = "<group>"; };
+		88EC8F6521FEE69100661C95 /* NJF_InvocationHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_InvocationHelper.m; sourceTree = "<group>"; };
+		88EC8F7121FEF06400661C95 /* NSObject+NJF_ConfiguratorTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+NJF_ConfiguratorTool.swift"; sourceTree = "<group>"; };
+		88EC8F7321FEF12400661C95 /* Header-OCSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Header-OCSwift.h"; sourceTree = "<group>"; };
 		88F57399215E32CA006EE98E /* NJF_HomeTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_HomeTableView.h; sourceTree = "<group>"; };
 		88F5739A215E32CA006EE98E /* NJF_HomeTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJF_HomeTableView.m; sourceTree = "<group>"; };
 		88F573AB215E3443006EE98E /* NJF_IcityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJF_IcityViewController.h; sourceTree = "<group>"; };
@@ -236,6 +252,8 @@
 		883B8BA521481D520086F106 /* NJF_Project */ = {
 			isa = PBXGroup;
 			children = (
+				88EC8F5821FEE03E00661C95 /* Resources */,
+				88EC8F5621FEDFD800661C95 /* InitializesConfigurator */,
 				88EC8F1021F9C86200661C95 /* ThirdLibs */,
 				88EC8F4C21FABD9C00661C95 /* PhotoSelect */,
 				88EC8F0421F9B07100661C95 /* AFNTool */,
@@ -394,6 +412,46 @@
 				88EC8F4E21FABDCB00661C95 /* NJF_PhotoSelectView.m */,
 			);
 			path = PhotoSelect;
+			sourceTree = "<group>";
+		};
+		88EC8F5621FEDFD800661C95 /* InitializesConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				88EC8F6021FEE46D00661C95 /* NJFAppEventBus */,
+				88EC8F5721FEDFF700661C95 /* Bugly */,
+			);
+			path = InitializesConfigurator;
+			sourceTree = "<group>";
+		};
+		88EC8F5721FEDFF700661C95 /* Bugly */ = {
+			isa = PBXGroup;
+			children = (
+				88EC8F5D21FEE27F00661C95 /* NJF_BuglyConfigurator.h */,
+				88EC8F5E21FEE27F00661C95 /* NJF_BuglyConfigurator.m */,
+			);
+			path = Bugly;
+			sourceTree = "<group>";
+		};
+		88EC8F5821FEE03E00661C95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88EC8F5921FEE09000661C95 /* AutoInitialize.plist */,
+				88EC8F5B21FEE10100661C95 /* AppConfigurator.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		88EC8F6021FEE46D00661C95 /* NJFAppEventBus */ = {
+			isa = PBXGroup;
+			children = (
+				88EC8F6121FEE4AA00661C95 /* NJF_AppLaunchHelper.h */,
+				88EC8F6221FEE4AA00661C95 /* NJF_AppLaunchHelper.m */,
+				88EC8F6421FEE69100661C95 /* NJF_InvocationHelper.h */,
+				88EC8F6521FEE69100661C95 /* NJF_InvocationHelper.m */,
+				88EC8F7121FEF06400661C95 /* NSObject+NJF_ConfiguratorTool.swift */,
+				88EC8F7321FEF12400661C95 /* Header-OCSwift.h */,
+			);
+			path = NJFAppEventBus;
 			sourceTree = "<group>";
 		};
 		88F5738C215E0C3E006EE98E /* Main */ = {
@@ -659,6 +717,7 @@
 				TargetAttributes = {
 					883B8BA221481D520086F106 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					883B8BBA21481D530086F106 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -698,7 +757,9 @@
 				883B8BB321481D530086F106 /* LaunchScreen.storyboard in Resources */,
 				88EC8F4121F9C93100661C95 /* TZImagePickerController.bundle in Resources */,
 				88542C5A214FF5BB002B33ED /* TabBarItemConfig.plist in Resources */,
+				88EC8F5A21FEE09000661C95 /* AutoInitialize.plist in Resources */,
 				883B8BB021481D530086F106 /* Assets.xcassets in Resources */,
+				88EC8F5C21FEE10100661C95 /* AppConfigurator.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,6 +837,7 @@
 				88EC8F0721F9B0F300661C95 /* NJF_NetworkTool.m in Sources */,
 				88EC8F3D21F9C93100661C95 /* TZAssetModel.m in Sources */,
 				88EC8F3C21F9C93100661C95 /* TZAssetCell.m in Sources */,
+				88EC8F6321FEE4AA00661C95 /* NJF_AppLaunchHelper.m in Sources */,
 				88EC8F0C21F9B98D00661C95 /* NJF_InterfacedConst.m in Sources */,
 				88EC8F3B21F9C93100661C95 /* NSBundle+TZImagePicker.m in Sources */,
 				88E283A0215E75E1009A0720 /* NJF_UserInfoModel.m in Sources */,
@@ -786,6 +848,7 @@
 				88542C54214C1481002B33ED /* NJF_HomeController.m in Sources */,
 				88F5739B215E32CA006EE98E /* NJF_HomeTableView.m in Sources */,
 				88EC8F3A21F9C93100661C95 /* FLAnimatedImageView.m in Sources */,
+				88EC8F7221FEF06400661C95 /* NSObject+NJF_ConfiguratorTool.swift in Sources */,
 				88E283A3215E7F4D009A0720 /* NJF_HomeViewModel.m in Sources */,
 				88542C5D214FFDB8002B33ED /* NJF_PlistConfig.m in Sources */,
 				88542C41214961FD002B33ED /* NJF_TabBarController.m in Sources */,
@@ -799,9 +862,11 @@
 				883B8BA821481D520086F106 /* AppDelegate.m in Sources */,
 				88F573B0215E345A006EE98E /* NJF_MessageViewController.m in Sources */,
 				88EC8F3F21F9C93100661C95 /* TZImageCropManager.m in Sources */,
+				88EC8F5F21FEE27F00661C95 /* NJF_BuglyConfigurator.m in Sources */,
 				88542C472149623D002B33ED /* NJF_NavigationController.m in Sources */,
 				88F573B3215E3469006EE98E /* NJF_MineViewController.m in Sources */,
 				88EC8F4821F9C93100661C95 /* TZProgressView.m in Sources */,
+				88EC8F6621FEE69100661C95 /* NJF_InvocationHelper.m in Sources */,
 				88EC8F4B21F9C93100661C95 /* TZTestCell.m in Sources */,
 				88EC8F3921F9C93100661C95 /* FLAnimatedImage.m in Sources */,
 				88EC8F3E21F9C93100661C95 /* TZGifPhotoPreviewController.m in Sources */,
@@ -970,6 +1035,7 @@
 			baseConfigurationReference = 46BCE235AEB798E6F3A098F2 /* Pods-NJF_Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = YXN9HXP244;
 				INFOPLIST_FILE = NJF_Project/Info.plist;
@@ -981,6 +1047,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldbox.kingnet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = ALDBox_Dev;
+				SWIFT_OBJC_BRIDGING_HEADER = "NJF_Project/InitializesConfigurator/NJFAppEventBus/Header-OCSwift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -990,6 +1059,7 @@
 			baseConfigurationReference = 155F17EBC7B071BB0E20739E /* Pods-NJF_Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = YXN9HXP244;
 				INFOPLIST_FILE = NJF_Project/Info.plist;
@@ -1001,6 +1071,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldbox.kingnet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = ALDBox_Dev;
+				SWIFT_OBJC_BRIDGING_HEADER = "NJF_Project/InitializesConfigurator/NJFAppEventBus/Header-OCSwift.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1008,6 +1080,7 @@
 		883B8BD321481D530086F106 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NJF_ProjectTests/Info.plist;
@@ -1026,6 +1099,7 @@
 		883B8BD421481D530086F106 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NJF_ProjectTests/Info.plist;
@@ -1044,6 +1118,7 @@
 		883B8BD621481D530086F106 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NJF_ProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1061,6 +1136,7 @@
 		883B8BD721481D530086F106 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NJF_ProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

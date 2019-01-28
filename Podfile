@@ -5,4 +5,5 @@ target 'NJF_Project' do
 
 # Customise this file, documentation can be found here:
 	 pod 'AFNetworking'
+	 pod 'Bugly'
 end
