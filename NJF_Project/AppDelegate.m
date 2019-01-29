@@ -16,8 +16,15 @@
 
 @implementation AppDelegate
 
+void uncaughtExceptionHandler(NSException *exception) {
+    NSLog(@"CRASH: %@", exception);
+    NSLog(@"Stack Trace: %@", [exception callStackSymbols]);
+    // Internal error reporting
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //崩溃日志
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     // Override point for customization after application launch.
     [NJF_AppLaunchHelper.shared autoInitModule];
     
